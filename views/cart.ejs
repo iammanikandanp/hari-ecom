@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    .cart-container {
+      padding: 20px;
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+    .cart-item-details {
+      flex: 1;
+    }
+    .cart-item-details h3 {
+      margin: 0;
+    }
+    .cart-item-details p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #666;
+    }
+    .cart-item-details .price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+    }
+    .cart-item button {
+      background: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cart-item button:hover {
+      background: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="cart-container">
+    <h2>Your Cart</h2>
+    <div class="cart-item">
+      <img src="https://via.placeholder.com/80" alt="Product">
+      <div class="cart-item-details">
+        <h3>Product Name</h3>
+        <p>A brief description of the product.</p>
+        <div class="price">₹500</div>
+      </div>
+      <button>Remove</button>
+    </div>
+    <div class="cart-item">
+      <img src="https://via.placeholder.com/80" alt="Product">
+      <div class="cart-item-details">
+        <h3>Another Product</h3>
+        <p>Another product description.</p>
+        <div class="price">₹1200</div>
+      </div>
+      <button>Remove</button>
+    </div>
+  </div>
+</body>
+</html>
